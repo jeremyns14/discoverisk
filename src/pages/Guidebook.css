@@ -1,0 +1,75 @@
+.guidebook-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.guidebook-card {
+  background-color: #ffffff;
+  padding: 3rem 3.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  max-width: 700px;
+  width: 100%;
+}
+
+.guidebook-card h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+}
+
+.step-number {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+.button-highlight {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.note {
+  font-weight: 600;
+  color: #b91c1c;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
