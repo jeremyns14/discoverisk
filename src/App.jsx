@@ -9,7 +9,7 @@ import Disclaimer from "./pages/Disclaimer";
 import Guidebook from "./pages/Guidebook";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/discoverisk">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/analysis" element={<AnalysisInvestment />} />
