@@ -1,3 +1,7 @@
+/* -------------------------------------------------- */
+/* MAIN CONTAINER                                      */
+/* -------------------------------------------------- */
+
 .guidebook-container {
   height: 100vh;
   display: flex;
@@ -8,6 +12,15 @@
   padding: 2rem;
   box-sizing: border-box;
 }
+
+/* Prevent navbar from covering title */
+.guidebook-card {
+  margin-top: 6rem; /* main fix */
+}
+
+/* -------------------------------------------------- */
+/* CARD                                                */
+/* -------------------------------------------------- */
 
 .guidebook-card {
   background-color: #ffffff;
@@ -31,6 +44,10 @@
   margin-bottom: 2rem;
   color: #111827;
 }
+
+/* -------------------------------------------------- */
+/* STEPS                                               */
+/* -------------------------------------------------- */
 
 .steps-container {
   display: flex;
@@ -72,4 +89,67 @@
   color: #b91c1c;
   font-size: 1rem;
   margin-top: 2rem;
+}
+
+/* -------------------------------------------------- */
+/* RESPONSIVE FIXES                                    */
+/* -------------------------------------------------- */
+
+/* Medium screens (navbar spacing + responsive height) */
+@media (max-width: 768px) {
+  .guidebook-card {
+    margin-top: 7rem;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  .guidebook-card {
+    margin-top: 8rem;
+  }
+}
+
+/* Full mobile optimization */
+@media (max-width: 640px) {
+
+  .guidebook-container {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .guidebook-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .guidebook-card h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .step-number {
+    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+  }
+
+  .step p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .note {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
